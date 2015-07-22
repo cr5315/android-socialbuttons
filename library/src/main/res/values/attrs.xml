@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShareButton">
+        <attr name="accessToken" format="string" />
+
+        <attr name="annotation">
+            <enum name="none" value="0" />
+            <enum name="bubble" value="1" />
+            <enum name="sheet" value="2" />
+        </attr>
+
+        <attr name="buttonDrawable" format="integer" />
+
+        <attr name="buttonText" format="string" />
+
+        <attr name="progressType">
+            <enum name="none" value="0" />
+            <enum name="spinner" value="1" />
+        </attr>
+
+        <attr name="shareUrl" format="string" />
+    </declare-styleable>
+
+</resources>

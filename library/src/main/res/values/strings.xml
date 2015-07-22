@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Social Buttons</string>
+    
+    <!-- Facebook -->
+    <string name="facebook_share">Share</string>
+
+    <!-- Twitter -->
+    <string name="twitter_tweet">Tweet</string>
+
+</resources>

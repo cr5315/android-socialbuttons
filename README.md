@@ -1,0 +1,67 @@
+# Android Social Buttons
+---
+
+A set of views which allow for easy sharing of content. The views can get the share count of the URL provided. This library was inspired by [gcacace/android-socialbuttons](https://github.com/gcacace/android-socialbuttons).
+
+Supported social networks:
+
+ * Facebook
+ * Twitter
+ 
+## Usage
+
+### AndroidManifest.xml
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+### Facebook
+Please note, an access token is required get the share count. You can read about getting an access token [here](https://developers.facebook.com/docs/facebook-login/access-tokens). If you don't want the share count, just set shareUrl.
+
+#### XML
+
+```xml
+<com.cr5315.socialbuttons.FacebookShareButton
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:accessToken="@string/facebook_access_token"
+    app:annotation="bubble"
+    app:shareUrl="http://www.imdb.com/title/tt2015381/"
+    />
+```
+
+#### Java
+
+```java
+FacebookShareButton shareButton = new FacebookShareButton(context);
+shareButton.setAccessToken("access token here");
+shareButton.setAnnotation(ShareButton.ANNOTATION_SHEET);
+shareButton.setShareUrl("http://www.imdb.com/title/tt2015381/");
+shareButton.fetchShares(); // Async via retrofit
+```
+
+### Twitter
+
+#### Coming soon
+
+---
+
+### Dependencies:
+ * [retrofit](https://github.com/square/retrofit)
+
+---
+
+### License
+    Copyright 2015 Ben Butzow
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.

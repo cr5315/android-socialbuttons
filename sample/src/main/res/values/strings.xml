@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Social Buttons Sample</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Replace with your Facebook Access Token. You can create one here: https://developers.facebook.com/tools/explorer/ (No permissions are required) -->
+    <string name="facebook_access_token">1690270144528949|4d7766fed87e4f6cb3b9b8187486d6ee</string>
+</resources>
