@@ -5,17 +5,24 @@ A set of views which allow for easy sharing of content. The views can get the sh
 
 Supported social networks:
 
- * Facebook
+ * Facebook Share
+ 
+Planned social networks:
+
+ * Facebook Like
  * Twitter
  
 ## Usage
 
 ### AndroidManifest.xml
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
-### Facebook
-Please note, an access token is required get the share count. You can read about getting an access token [here](https://developers.facebook.com/docs/facebook-login/access-tokens). If you don't want the share count, just set shareUrl.
+
+### Facebook Share Button
+
+Please note, an access token is required get the share count. You can read about getting an access token [here](https://developers.facebook.com/docs/facebook-login/access-tokens). If you don't want the share count, set annotation="none".
 
 #### XML
 
@@ -26,6 +33,9 @@ Please note, an access token is required get the share count. You can read about
     android:layout_height="wrap_content"
     app:accessToken="@string/facebook_access_token"
     app:annotation="bubble"
+    app:buttonDrawable="@drawable/ic_share_button"
+    app:buttonText="Share our app"
+    app:progressType="spinner"
     app:shareUrl="http://www.imdb.com/title/tt2015381/"
     />
 ```
@@ -39,10 +49,6 @@ shareButton.setAnnotation(ShareButton.ANNOTATION_SHEET);
 shareButton.setShareUrl("http://www.imdb.com/title/tt2015381/");
 shareButton.fetchShares(); // Async via retrofit
 ```
-
-### Twitter
-
-#### Coming soon
 
 ---
 
