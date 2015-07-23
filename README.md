@@ -5,11 +5,11 @@ A set of views which allow for easy sharing of content. The views can get the sh
 
 Supported social networks:
 
+ * Facebook Like
  * Facebook Share
  
 Planned social networks:
-
- * Facebook Like
+ 
  * Twitter
 
 ## Installation
@@ -22,11 +22,11 @@ repositories {
 }
     
 dependencies {
-    compile 'com.cr5315:socialbuttons:0.1.0'
+    compile 'com.cr5315:socialbuttons:0.2.0'
 }
 ```
  
- ### AndroidManifest.xml
+### AndroidManifest.xml
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -34,7 +34,19 @@ dependencies {
 
 ## Usage
 
+### Facebook Like Button
 
+The like button will open the Facebook app to your page (if the Facebook app is installed), or open the browser. To use the like button, you need to set your page ID and URL. You can get your page ID [from this nifty site](http://findmyfacebookid.com/).
+
+```xml
+<com.cr5315.socialbuttons.FacebookLikeButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:pageId="580369862000929"
+    app:pageUrl="https://www.facebook.com/J2Official"
+    />
+```
 
 ### Facebook Share Button
 

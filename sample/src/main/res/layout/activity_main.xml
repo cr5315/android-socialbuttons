@@ -33,4 +33,12 @@
         app:shareUrl="http://www.imdb.com/title/tt2015381/"
         />
 
+    <com.cr5315.socialbuttons.FacebookLikeButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:pageId="580369862000929"
+        app:pageUrl="https://www.facebook.com/J2Official"
+        />
+
 </LinearLayout>

@@ -70,7 +70,7 @@ public abstract class ShareButton extends LinearLayout {
     public void fetchShares(boolean forceRefresh) {
         displayAnnotation();
 
-        if (getShareUrl() != null && (forceRefresh || !mIsFetched)) {
+        if (getAnnotation() != ANNOTATION_NONE && getShareUrl() != null && (forceRefresh || !mIsFetched)) {
             TextView annotationText = (TextView) findViewById(R.id.annotationText);
             ProgressBar annotationProgress = (ProgressBar) findViewById(R.id.annotationProgress);
 

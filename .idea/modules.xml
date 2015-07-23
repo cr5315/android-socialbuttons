@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/SocialButtons.iml" filepath="$PROJECT_DIR$/SocialButtons.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/socialbuttons/socialbuttons.iml" filepath="$PROJECT_DIR$/socialbuttons/socialbuttons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/socialbuttons.iml" filepath="$PROJECT_DIR$/library/socialbuttons.iml" />
     </modules>
   </component>
 </project>

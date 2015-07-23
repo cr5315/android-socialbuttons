@@ -2,6 +2,7 @@
     <string name="app_name">Social Buttons</string>
     
     <!-- Facebook -->
+    <string name="facebook_like">Like</string>
     <string name="facebook_share">Share</string>
 
     <!-- Twitter -->

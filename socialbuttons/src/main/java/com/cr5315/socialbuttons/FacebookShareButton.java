@@ -50,7 +50,7 @@ public class FacebookShareButton extends ShareButton {
     }
 
     protected void initView(AttributeSet attrs) {
-        LayoutInflater.from(getContext()).inflate(R.layout.button_facebook, this);
+        LayoutInflater.from(getContext()).inflate(R.layout.button_facebook_share, this);
 
         if (attrs != null) {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ShareButton);
