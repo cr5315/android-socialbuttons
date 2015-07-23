@@ -11,20 +11,34 @@ Planned social networks:
 
  * Facebook Like
  * Twitter
- 
-## Usage
 
-### AndroidManifest.xml
+## Installation
+
+### build.gradle
+
+```sh
+repositories {
+	jcenter()
+}
+    
+dependencies {
+    compile 'com.cr5315:socialbuttons:0.1.0'
+}
+```
+ 
+ ### AndroidManifest.xml
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 ```
 
+## Usage
+
+
+
 ### Facebook Share Button
 
 Please note, an access token is required get the share count. You can read about getting an access token [here](https://developers.facebook.com/docs/facebook-login/access-tokens). If you don't want the share count, set annotation="none".
-
-#### XML
 
 ```xml
 <com.cr5315.socialbuttons.FacebookShareButton
@@ -38,16 +52,6 @@ Please note, an access token is required get the share count. You can read about
     app:progressType="spinner"
     app:shareUrl="http://www.imdb.com/title/tt2015381/"
     />
-```
-
-#### Java
-
-```java
-FacebookShareButton shareButton = new FacebookShareButton(context);
-shareButton.setAccessToken("access token here");
-shareButton.setAnnotation(ShareButton.ANNOTATION_SHEET);
-shareButton.setShareUrl("http://www.imdb.com/title/tt2015381/");
-shareButton.fetchShares(); // Async via retrofit
 ```
 
 ---
